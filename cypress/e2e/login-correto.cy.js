@@ -1,9 +1,9 @@
-describe('Login ok', () => {
+describe('Pagina de login', () => {
     beforeEach(() => {
       cy.visit('https://3076-cypress-alurapic-front.vercel.app/#/home')
     })
     
-  it('Usuario deve conseguir logar sucesso', () => {
+  it('Deve realizar login com sucesso', () => {
     cy.getByData('loginUserName').click()
     cy.getByData('loginUserName').type('guilherme')
     cy.getByData('loginPassword').click()
